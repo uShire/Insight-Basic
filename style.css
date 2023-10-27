@@ -160,7 +160,7 @@ img {
 .banner {
   background-image: url("./img/banner-img.png");
   background-size: cover;
-  min-height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   text-align: center;
