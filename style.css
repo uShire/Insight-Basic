@@ -473,7 +473,20 @@ img {
   font-size: 2rem;
   border-radius: 2rem;
 }
-
+@media screen and (max-width: 480px) {
+  .projects__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .projects__item .cue {
+    width: 0;
+    height: 0;
+  }
+  .projects__item .projects__item__text {
+    opacity: 1;
+  }
+}
 /*REPEATABLE PATTERNS*/
 :root {
   --primary: #fb4d3d;
