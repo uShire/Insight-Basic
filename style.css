@@ -114,9 +114,6 @@ a {
 img {
   max-width: 100%;
 }
-body {
-  height: 1500px;
-}
 /*CONTAINER*/
 .container {
   max-width: 120rem;
@@ -211,6 +208,10 @@ body {
 @media screen and (max-width: 480px) {
   .header a.branding {
     width: 10rem;
+  }
+  .header.dark .container {
+    margin-top: 0rem;
+    border-radius: 0;
   }
   .header .header__nav {
     position: relative;
@@ -321,6 +322,96 @@ body {
   }
 }
 
+/*SERVICES CARDS*/
+.cards {
+  padding: 5rem 0;
+  background: var(--light);
+}
+.cards .cards__title h2 {
+  color: var(--primary);
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+.cards .cards__title {
+  margin-bottom: 8rem;
+}
+.cards__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5rem;
+}
+.cards__item {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 2rem;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s ease;
+}
+.cards__item .cards__item__wrapper {
+  height: 90%;
+  padding: 2rem 3rem;
+}
+.cards__item .cards__item__text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+.cards__item .cards__item__text h3 {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+.cards__item .cards__item__text p {
+  text-align: justify;
+}
+.cards__item .cards__item__text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+.cards__item .cards__item__text ul li {
+  list-style: square;
+}
+.cards__item a {
+  padding: 2rem 0;
+  border-top: 1px solid var(--primary);
+  color: var(--primary);
+  width: fit-content;
+  display: inline-block;
+  text-align: center;
+  width: 80%;
+}
+.cards__item:hover {
+  scale: 1.1;
+  transition: 0.5s ease;
+}
+.cards__item:hover a {
+  background: var(--primary);
+  color: var(--light);
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  .cards {
+    padding: 5rem 2rem;
+  }
+  .cards .cards__title {
+    text-align: center;
+  }
+  .cards__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .cards__item:hover {
+    scale: 1;
+    transition: 0.5s ease;
+  }
+}
 /*REPEATABLE PATTERNS*/
 :root {
   --primary: #fb4d3d;
