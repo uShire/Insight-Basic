@@ -5,19 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Insight Interiors</title>
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/a6726e13c6.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
-          <a href=""><img src="./img/logo.png" alt="" /></a>
+          <a href="" class="branding"><img src="./img/logo.png" alt="" /></a>
           <div class="header__nav">
-            <ul>
+            <ul class="nav">
               <li><a href="#home">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Projects</a></li>
               <li><a href="#">Contacts</a></li>
+              <ul class="social">
+                <li id="email">
+                  <a href=""><i class="fa-solid fa-envelope"></i></a>
+                </li>
+                <li id="twitter">
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li id="facebook">
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+              </ul>
             </ul>
+
+            <a href=""><img src="./img/logo.png" alt="" /></a>
           </div>
           <div class="toggle__menu">
             <span></span>
@@ -41,31 +58,12 @@
         </div>
       </div>
     </section>
-    <!-- <section class="cards">
+    <section class="cards">
       <div class="container">
-        <div class="cards__wrapper">
-          <div class="cards__item">
-            <figure>
-              <img src="./img/cards-1.png" alt="" />
-            </figure>
-
-            <h4>Kitchen & Dining</h4>
-          </div>
-          <div class="cards__item">
-            <figure>
-              <img src="./img/cards-2.png" alt="" />
-            </figure>
-
-            <h4>Bathroom</h4>
-          </div>
-          <div class="cards__item">
-            <figure>
-              <img src="./img/cards-3.png" alt="" />
-            </figure>
-            <h4>Living Room</h4>
-          </div>
-        </div>
+        <h2>Services</h2>
+        <div class="cards__wrapper"></div>
       </div>
-    </section> -->
+    </section>
+    <script src="./script.js"></script>
   </body>
 </html>
